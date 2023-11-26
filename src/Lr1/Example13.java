@@ -1,10 +1,18 @@
 package Lr1;
-
+import java.time.LocalDate;
+import java.util.Scanner;
 public class Example13 {
     public static void main(String[] args) {
-        int num = 100;
-        System.out.println("num: " + num);
-        num = num * 2;
-        System.out.println("num * 2 = " + num);
+        LocalDate current_date = LocalDate.now();
+        int year = current_date.getYear();
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Input age: ");
+        int age = in.nextInt();
+
+        int yearOfbirth = year - age;
+        System.out.println(" Your year of birth " + yearOfbirth);
+        in.close();
     }
 }

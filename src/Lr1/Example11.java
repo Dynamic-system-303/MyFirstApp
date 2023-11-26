@@ -1,18 +1,24 @@
 package Lr1;
-
+import java.time.LocalDate;
 import java.util.Scanner;
-
 public class Example11 {
     public static void main(String[] args) {
+        LocalDate current_date = LocalDate.now();
+        int year = current_date.getYear();
+
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Input first number: ");
-        int firstNumber = in.nextInt();
+        System.out.println("Input year of birth: ");
+        int yearOfbirth = in.nextInt();
 
-        System.out.println("Input second number: ");
-        int secondNumber = in.nextInt();
+        int age = year - yearOfbirth;
+        System.out.println(" You are " + age + " years old");
+        in.close();
 
-        System.out.println("Summa: " + (firstNumber + secondNumber));
-        System.out.println("Difference: " + (firstNumber - secondNumber));
+
+
     }
 }
+
+
+

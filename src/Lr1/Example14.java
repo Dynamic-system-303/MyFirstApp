@@ -1,21 +1,17 @@
 package Lr1;
-
+import java.util.Scanner;
 public class Example14 {
     public static void main(String[] args) {
-        int s, d;
-        s = 10;
-        d = 20;
-        if (s < d) {
-            System.out.println("S < D");
-        }
-        s = s * 2;
-        if (s == d) {
-            System.out.println("S = D");
-        }
-        s = s * d;
-        if (s > d) {
-            System.out.println("S > D");
-        }
+        Scanner in = new Scanner(System.in);
 
+        System.out.println("Input first number: ");
+        int firstNumber = in.nextInt();
+
+        System.out.println("Input second number: ");
+        int secondNumber = in.nextInt();
+
+        int sum = firstNumber + secondNumber;
+        System.out.println(" Summa= " + sum);
+        in.close();
     }
 }
