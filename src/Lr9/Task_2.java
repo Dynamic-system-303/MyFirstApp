@@ -10,15 +10,12 @@ public class Task_2 {
         toBinary(result);
     }
 
-    public static int toBinary(int num) {
+    public static void toBinary(int num) {
         int result = num / 2;
         int remainder = num % 2;
-        String str = Integer.toString (
-
-        System.out.println (remainder);
-        if (result < 1) {
-            return result;
+        if (result > 0) {
+            toBinary(result); // В рекурсию нужно брать то число, с которым будешь делать те же самые операции.
         }
-        return toBinary(result); // В рекурсию нужно брать то число, с которым будешь делать те же самые операции.
+        System.out.println(remainder);
     }
 }
