@@ -5,7 +5,7 @@ public class Task2 {
     private static int pole = 0;
 
     public static int showPole () {
-//         System.out.println(pole);
+        System.out.println(pole);
         return pole++;
     }
 }
