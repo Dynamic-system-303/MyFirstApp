@@ -95,12 +95,45 @@ public class Task_8_List {
         temp.next = temp.next.next;
     }
 
-    public static Task_8_LinkList createHeadRec(int data) {
-        Task_8_LinkList result = new Task_8_LinkList(data);
-        for (int i = 0; i <= data; i++) {
-            Task_8_LinkList temp = new Task_8_LinkList(i);
+    private void createNodesHeadRecursive(Task_8_LinkList current, int data) {
+        if (current.data < data) {
+            Task_8_LinkList next = new Task_8_LinkList(current.data + 1);
+            current.next = next;
+            createNodesHeadRecursive(next, data);
         }
-        return result;
     }
+
+    public void createHeadRec(int data) {
+        head = new Task_8_LinkList(0);
+        createNodesHeadRecursive(head, data);
+    }
+
+    private void createNodesTailRecursive(Task_8_LinkList prev, int current, int data) {
+        if (current <= data) {
+            Task_8_LinkList node = new Task_8_LinkList(current);
+            if (head == null) {
+                head = node;
+            } else {
+                prev.next = node;
+            }
+            createNodesTailRecursive(node, current + 1, data);
+        }
+    }
+
+    public void createTailRec(int data) {
+        createNodesTailRecursive(head, 0, data);
+    }
+
+    private String toStringRecHelper(Task_8_LinkList node) {
+        if (node == null) {
+            return "";
+        }
+        return node.data + " " + toStringRecHelper(node.next);
+    }
+
+    public String toStringRec() {
+        return toStringRecHelper(head);
+    }
+
 }
 

@@ -3,12 +3,13 @@ package Lr9;
 
 public class Task_8_main {
     public static void main(String[] args) {
-//        Task_8_List list = new Task_8_List();
+        Task_8_List list = new Task_8_List();
 //        list.createHeadRec(10);
 //        System.out.println(list.toString());
 
-        Task_8_LinkList list = Task_8_List.createHeadRec(10);
+        list.createHeadRec(10);
         System.out.println(list.toString());
+        System.out.println(list.toStringRec());
 //        list.Remove(4);
 //        System.out.println(list.toString());
 

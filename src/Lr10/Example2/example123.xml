@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><list>
+    <employee>
+        <office>Дождливых понедельников</office>
+        <name>Петруня</name>
+        <experience>12</experience>
+    </employee>
+    <employee>
+        <office>Срочных новостей</office>
+        <name>Виктор</name>
+        <experience>0.5</experience>
+    </employee>
+    
+    
+</list>
