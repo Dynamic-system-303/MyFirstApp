@@ -3,35 +3,41 @@ package Lr9;
 
 public class Task_8_main {
     public static void main(String[] args) {
-        Task_8_List list = new Task_8_List();
-//        list.createHeadRec(10);
-//        System.out.println(list.toString());
+        Task_8_List createHead = new Task_8_List();
+        createHead.creatHead(10);
+        System.out.println(createHead);
 
-        list.createHeadRec(10);
-        System.out.println(list.toString());
-        System.out.println(list.toStringRec());
-//        list.Remove(4);
-//        System.out.println(list.toString());
+        Task_8_List createTail = new Task_8_List();
+        createTail.createTail(10);
+        System.out.println(createTail);
 
-  //      Task_8_List list1 = new Task_8_List();
-   //     list1.createTail(10);
-     //   System.out.println(list1.toString());
+        createHead.addFirst(12);
+        System.out.println(createHead.toString());
 
-//        list.addFirst(10);
-//        list.addFirst(20);
-//        list.addFirst(30);
-//        list.print();
-//
-//        System.out.println();
-//
-//
-//        list.addLast(5);
-//        list.addLast(1);
-//        list.print();
-//        System.out.println(list.toString());
+        createHead.addLast(-3);
+        System.out.println(createHead.toString());
 
-//        list.Insert(3, 999);
-//        list.print();
+        createTail.Insert(5,221);
+        System.out.println(createTail.toString());
+
+        createTail.RemoveFirst();
+        System.out.println(createTail.toString());
+
+        createTail.RemoveLast();
+        System.out.println(createTail.toString());
+
+        createTail.Remove(4);
+        System.out.println(createTail.toString());
+
+        Task_8_List CreateHeadRec = new Task_8_List();
+        CreateHeadRec.createHeadRec(10);
+        System.out.println(CreateHeadRec.toStringRec());
+
+        Task_8_List CreateTailRec = new Task_8_List();
+        CreateTailRec.createTailRec(10);
+        System.out.println(CreateTailRec.toStringRec());
+
+        System.out.println(CreateTailRec.toStringRec());
 
     }
 }

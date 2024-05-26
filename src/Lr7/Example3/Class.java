@@ -14,7 +14,8 @@ public class Class {
         this.setPole(intPole);
     }
     //Для каждого класса определите метод toString () так,
-    // чтобы он возвращал строку с названием класса и значениями всех полей объекта.
+    // чтобы он возвращал строку с названием класса и значениями
+    // всех полей объекта.
 
     public String toString() {
         String ClassNameAndFieldValue;

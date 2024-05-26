@@ -18,8 +18,9 @@ public class SuperClass {
     public void PrintToString() {
         String ClassNameAndFieldValue;
         ClassNameAndFieldValue =
-                "\n Class name: " + this.getClass().getSimpleName() + "\n" +
-                        " String str = \"" + this.getStr() + "\"";
+                "\n Class name: " + this.getClass().getSimpleName()
+                        + "\n" + " String str = \"" + this.getStr()
+                        + "\"";
         System.out.println(ClassNameAndFieldValue);
     }
 

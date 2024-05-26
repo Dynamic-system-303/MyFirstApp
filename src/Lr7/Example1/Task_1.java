@@ -14,7 +14,7 @@ public class Task_1 {
 
     //@Override - аннотация указываемая для того, чтобы показать
     // что далее мы собираемся переопределять метод класса
-    @Override
+
     public String toString() {
         String Task_1NameAndFieldValue;
         Task_1NameAndFieldValue = "super" + "\n" +
