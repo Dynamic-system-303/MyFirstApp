@@ -33,7 +33,8 @@ public class Task_1_2 {
             workbook.close();
             inputStream.close();
         } else {
-            System.out.println("Запрашиваемый лист не найден! Поищите среди имеющихся листов:");
+            System.out.println("Запрашиваемый лист не найден! " +
+                    "Поищите среди имеющихся листов:");
             // Лист не найден, обработка других листов
             Iterator<Sheet> sheetIterator = workbook.iterator();
             while (sheetIterator.hasNext()) {

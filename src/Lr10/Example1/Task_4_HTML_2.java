@@ -16,9 +16,9 @@ public class Task_4_HTML_2 {
             Document doc = Jsoup.connect("http://fat.urfu.ru/index.html").get();
 
             // Извлекаем список новостей
-            Elements newsParent = doc.select("body > table > tbody > tr > td > div > table > " +
-                    "tbody > tr:nth-child(5) > td:nth-child(3) > table > tbody > "
-                    + "tr > td:nth-child(1)");
+            Elements newsParent = doc.select("body > table > tbody > tr > " +
+                    "td > div > table > " + "tbody > tr:nth-child(5) > td:nth-child(3) > "
+                    + "table > tbody > " + "tr > td:nth-child(1)");
 
             // Выводим последнийе 10 новостей
             for (int i = 3; i < 20; i++) {

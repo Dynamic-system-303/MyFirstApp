@@ -10,8 +10,6 @@ import org.jsoup.select.Elements;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.List;
 
